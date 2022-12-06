@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <top>
+      <Label text="Langtons Test Ant" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Group fx:id="cells" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="38.0" prefWidth="800.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" prefHeight="17.0" prefWidth="60.0" text="Dimension" />
+                  <TextField fx:id="txtfldDim" layoutX="74.0" layoutY="6.0" />
+                  <Button fx:id="btnStart" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="441.0" layoutY="6.0" mnemonicParsing="false" text="Start" />
+                  <Label layoutX="282.0" layoutY="10.0" text="x" />
+                  <TextField fx:id="txtfldX" layoutX="360.0" layoutY="3.0" prefHeight="26.0" prefWidth="24.0" />
+                  <Label layoutX="354.0" layoutY="10.0" text="y" />
+                  <TextField fx:id="txtfldY" layoutX="288.0" layoutY="6.0" prefHeight="26.0" prefWidth="27.0" />
+                  <Button fx:id="btnreset" layoutX="504.0" layoutY="6.0" mnemonicParsing="false" text="Reset" />
+                  <Slider fx:id="sliderSpeed" layoutX="645.0" layoutY="12.0" />
+                  <Button fx:id="btnSave" layoutX="567.0" layoutY="7.0" mnemonicParsing="false" text="Save" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
